@@ -1,4 +1,10 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import {
+  // BrowserRouter,
+  HashRouter,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import AppLatout from "./ui/AppLayout";
 import Home from "./pages/Home";
 
@@ -7,7 +13,7 @@ function App() {
     <HashRouter
       future={{
         v7_startTransition: true,
-        v7_relativeSplatPath:true
+        v7_relativeSplatPath: true,
       }}
     >
       <Routes>
