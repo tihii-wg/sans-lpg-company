@@ -1,6 +1,6 @@
 import {
-  BrowserRouter,
-  // HashRouter,
+  // BrowserRouter,
+  HashRouter,
   Navigate,
   Route,
   Routes,
@@ -10,16 +10,14 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <BrowserRouter
-      
-    >
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/ro" replace />} />
         <Route path="/:lang/*" element={<AppLatout />}>
           <Route index element={<Home />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
