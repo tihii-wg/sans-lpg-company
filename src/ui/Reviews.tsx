@@ -20,7 +20,10 @@ export default function Reviews() {
 
   useEffect(() => {
     fetch(`/api/reviews`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("API error");
+        return res.json();
+      })
       .then((data) => setRewiews(data))
       .catch((err) => console.log(err));
   }, []);
