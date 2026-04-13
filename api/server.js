@@ -2,7 +2,6 @@ import "dotenv/config";
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
-import { profile } from "console";
 
 const app = express();
 app.use(cors());
