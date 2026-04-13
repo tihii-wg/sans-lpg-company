@@ -19,7 +19,7 @@ export default function Reviews() {
   const [reviews, setRewiews] = useState<Review[]>([]);
 
   useEffect(() => {
-    fetch(`/api/reviews`)
+    fetch(`http://localhost:3001/api/reviews`)
       .then((res) => {
         if (!res.ok) throw new Error("API error");
         return res.json();
