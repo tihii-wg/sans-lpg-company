@@ -23,7 +23,7 @@ export default function Header() {
           <LanguageSwitcher />
         </div>
       </div>
-      <div className=" 2xl:min-h-100 xl:min-h-80 lg:min-h-50  flex flex-col relative overflow-hidden ">
+      <div className="2xl:min-h-100 xl:min-h-80 lg:min-h-50 flex flex-col relative overflow-hidden max-[640px]:overflow-visible">
         <div className=" bg-green-50 2xl:px-70 lg:px-30 md:px-10 sm:px-5 max-[640px]:px-2 2xl:pt-5 xl:pt-3 lg:pt-3 md:pt-5 sm:pt-5 flex flex-col ">
           <h1 className="2xl:text-6xl xl:text-4xl lg:text-2xl md:text-2xl  sm:text-2xl max-[640px]:text-xl text-green-800 mr-35 mb-6 max-[640px]:mb-1 font-bold ">
             {t("header.title")}
@@ -55,7 +55,7 @@ export default function Header() {
             </div>
           </div>
           <img
-            className=" absolute 2xl:right-60  lg:right-30  md:right-5 sm:right-1 max-[640px]:right-0 mask-[linear-gradient(to_left,black_30%,transparent)] max-[640px]:mask-[linear-gradient(to_left,black_0%,transparent)][-webkit-mask-image:linear-gradient(to_left,black30%,transparent)   2xl:w-175 xl:w-140 lg:w-120 md:w-120 sm:w-100  2xl:h-100 xl:h-80 lg:h-70 md:h-77 sm:h-69 max-[640px]:h-50 2xl:bottom-0    lg:bottom     md:bottom-0  sm:bottom-0  "
+            className="absolute 2xl:right-60 lg:right-30 md:right-5 sm:right-1 mask-[linear-gradient(to_left,black_30%,transparent)] 2xl:w-175 xl:w-140 lg:w-120 md:w-120 sm:w-100 2xl:h-100 xl:h-80 lg:h-70 md:h-77 sm:h-69 2xl:bottom-0 md:bottom-0 sm:bottom-0 max-[640px]:static max-[640px]:mt-3 max-[640px]:w-full max-[640px]:h-auto max-[640px]:object-contain max-[640px]:mask-none max-[640px]:[-webkit-mask-image:none]"
             src="/img/service-background.png"
             alt="service image"
           />
