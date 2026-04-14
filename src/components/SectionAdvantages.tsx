@@ -26,7 +26,7 @@ export default function SectionAdvantages() {
         </div>
         <div className="border-2 border-gray-200 mx-auto rounded-xl text-center 2xl:w-100 2xl:h-70 xl:w-80 xl:h-60 lg:w-60 lg:h-45 md:w-60 md:h-40 sm:h-80 sm:w-90 max-[640px]:w-70 max-[640px]:h-50 flex flex-col items-center">
           <Cog8ToothIcon className="2xl:size-30 xl:size-20 lg:size-15 md:size-10 sm:size-25 max-[640px]:size-15 text-green-700 2xl:my-2 lg:my-4 md:my-2 sm:my-4 max-[640px]:my-4" />
-          <h2 className="2xl:text-4xl xl:text-2xl lg:text-xl md:text-md  sm:text-xl text-gray-700 2xl:mb-4 xl:mb-4 lg:mb-2 md:mb-1 sm:mb-1 max-[640px]:mb-3">
+          <h2 className="2xl:text-4xl xl:text-2xl lg:text-xl md:text-xl  max-[768px]:text-3xl text-gray-700 2xl:mb-4 xl:mb-4 lg:mb-2 md:mb-1 sm:mb-10 max-[640px]:mb-3">
             {t("main.section-advantages.card-equipment-title")}
           </h2>
           <div className=" h-0.5 2xl:w-93 xl:w-70 lg:w-55 md:w-50 sm:w-80 max-[640px]:w-60 bg-gray-200"></div>
@@ -36,7 +36,7 @@ export default function SectionAdvantages() {
         </div>
         <div className="border-2 border-gray-200 mx-auto rounded-xl text-center 2xl:w-100 2xl:h-70 xl:w-80 xl:h-60 lg:w-60 lg:h-45 md:w-60 md:h-40 sm:h-80 sm:w-90 max-[640px]:w-70 max-[640px]:h-50 flex flex-col items-center">
           <ClipboardDocumentListIcon className="2xl:size-30 xl:size-20 lg:size-15 md:size-10  sm:size-25 max-[640px]:size-15 text-green-700 2xl:my-2 lg:my-4 md:my-2 sm:my-4 max-[640px]:my-4" />
-          <h2 className="2xl:text-4xl xl:text-2xl lg:text-xl md:text-md sm:text-xl max-[640px]:text-2xl text-gray-700 2xl:mb-4 xl:mb-4 lg:mb-2 md:mb-1 max-[640px]:mb-3 ">
+          <h2 className="2xl:text-4xl xl:text-2xl lg:text-xl md:text-md sm:text-xl max-[640px]:text-4xl text-gray-700 2xl:mb-4 xl:mb-4 lg:mb-2 md:mb-1 max-[640px]:mb-3 ">
             {t("main.section-advantages.card-legally-title")}
           </h2>
           <div className=" h-0.5 2xl:w-93 xl:w-70 lg:w-55 md:w-50 sm:w-80 max-[640px]:w-60 bg-gray-200"></div>
