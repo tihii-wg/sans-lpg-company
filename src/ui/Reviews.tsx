@@ -23,7 +23,6 @@ export default function Reviews() {
       .then((data) => setRewiews(data));
   }, []);
 
-  console.log(reviews);
   const rating =
     reviews?.reduce((acc: number, rev) => acc + rev.rating, 0) /
       reviews.length || 1;

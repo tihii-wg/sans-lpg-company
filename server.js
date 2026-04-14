@@ -6,7 +6,7 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
-const placeId = "ChIJ-Z_sYbZ7n0ARtIHK5jBxAME";
+const placeId = process.env.PLACE_ID;
 const apiKey = process.env.GOOGLE_KEY;
 
 
@@ -22,8 +22,7 @@ app.get("/api/reviews", async (req, res) => {
     }
 
     const data = await response.json();
-    
-    console.log(data);
+
 
 
     res.status(200).json(
