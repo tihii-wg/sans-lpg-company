@@ -2,6 +2,8 @@ export default async function handler(req, res) {
   const placeId = process.env.PLACE_ID;
   const apiKey = process.env.GOOGLE_KEY;
 
+  res.setHeader("Cache-Control", "no-store, max-age=0");
+
   if (!placeId || !apiKey) {
     return res.status(500).json({ error: "Missing server environment variables" });
   }
