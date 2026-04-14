@@ -1,4 +1,4 @@
 
 {
-  "routes": [{ "src": "/[^.]+", "dest": "/:lang/*", "status": 200 }]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
